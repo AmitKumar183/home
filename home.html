@@ -24,32 +24,119 @@
   <div>
 
     <!-------------------------------header start-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-      <div class="container-fluid">
+    <div class="container-fluid">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="starlite.png" alt="starlite" style="width: 150px;">
+            </a>
 
-        <a class="navbar-brand" href="#"><img src="starlite.png" alt="starlite" style="height: 45px; px-5"></a>
-        <div class="collapse navbar-collapse fs-5" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6 fs-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Contact</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a href="#" class=" btn btn-outline-danger">Login</a>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style="font-weight: 500;">
+                <li><a href="#" class="nav-link px-3 link-dark text-dark fs-5">HOME</a></li>
+                <li><a href="#" class="nav-link px-3 link-dark text-bold fs-5">OUR PROJECTS</a></li>
+                <li><a href="#" class="nav-link px-3 link-dark text-bold fs-5">BLOGS</a></li>
+                <li><a href="#" class="nav-link px-3 link-dark text-bold fs-5">CONTACT</a></li>
+                <li><a href="#" class="nav-link px-3 link-dark fs-5 text-bold">ABOUT</a></li>
+            </ul>
 
-          </div>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    LOGIN
+                </button>
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalr">
+                    Register here
+                </button>
+
+            </div>
+        </header>
+    </div>
+    <!-------------------------nav nnbar end-->
+    <!--------------------------login model--
+
+  
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: rgb(121, 115, 115);color:white;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login Now</h5>
+                    <a class="btn btn-success" aria-label="Close" aria-disabled="true" >Register here</a>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
+    <!--------------------------------end------->
+
+    <!--------------------------register model--
+
+  
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModalr" tabindex="-1" aria-labelledby="exampleModalLabelr" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content mx-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelr">Register Now </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="lblname" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="lblname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lblmobile" class="form-label">Mobile</label>
+                            <input type="number" class="form-control" id="lblmobile" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lblconfirmpassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="lblconfirmpassword" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!---------------------------header end-->
